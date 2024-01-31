@@ -61,11 +61,30 @@ pip install -r requirements.txt
 ```
 
 3. Run the app:
-```
-streamlit run 01_👨‍🔧_DE_Zoomcamp_2023.py
+
+First run, install venv first; subsequent runs be sure to activate `mba zoomcampui`.
+
+```bash
+streamlit run dezoomcamp/DE_Zoomcamp.py
 ```
 
 4. Access the app in your browser at http://localhost:8501
+
+## Blueprint for restructure plans
+
+As it is unfair of current cohort to expect Hamza to keep updating this in perpetuity, I'm taking the opportunity of updating with 2024 content for `data-engineering-zoomcamp` and also changing the structure of the pages.
+
+- [ ] Sidebar: Use Radio buttons for 3 courses and cohorts
+- [ ] Sidebar: Unselected course/cohort should remain hidden
+- this would ensure Sidebar does not get too long, and only the course in context is being shown. I don't need to see content list of courses not currently selected.
+- [ ] Main Page: Add mine to Hamza's contributor & copyright as a footer for every page. 
+- Easier to edit? Instead of at every page
+- Ideas: `st.container` but seems that `st.footer` has been deprecated
+- [ ] Main Page: ultimately, content needs to be scraped and "plugged-in". Not going to re-edit for perpetuity if repos are edited at any time.
+
+- This however won't help for cases when the content is in its own repo - examples for some like Prefect and Mage lessons.
+- [ ] Edit main script entrypoint name if catering to all courses, as just `zoomcamp.py`
+
 
 ## 📨 Contact Me
 
